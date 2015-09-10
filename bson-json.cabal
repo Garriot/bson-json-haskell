@@ -1,16 +1,28 @@
 Name: bson-json
-Version: 0.0.1
+Version: 0.0.2
 Synopsis: Convert BSON to JSON and vice-versa
-Description: ToJSON and FromJSON instances for BSON Documents and Values
+Description: ToJSON and FromJSON instances for BSON Documents and Values, forked from http://github.com/TonyGen/bson-json-haskell
 Category: Data, JSON
 Homepage: http://github.com/TonyGen/bson-json-haskell
-Author: Tony Hannan
-Maintainer: Tony Hannan <tonyhannan@gmail.com>
-Copyright: Copyright (c) 2012 Tony Hannan
+Author: Garriot Zhang
+Maintainer: Garriot Zhang <garriot@gmail.com>
+Copyright: 
 License: OtherLicense
 License-file: LICENSE
-cabal-version: >= 1.8
+cabal-version: >= 1.10
 build-type: Simple
+
 Library
-    Build-Depends: base < 5, bson, aeson, bytestring, text, unordered-containers, vector, attoparsec
+    default-language: Haskell2010
+    Build-Depends: base
+                 , bson
+                 , aeson
+                 , bytestring
+                 , text
+                 , unordered-containers
+                 , vector
+                 , attoparsec
+                 , scientific
+
     Exposed-modules: Data.Bson.Json
+    GHC-Options: -Wall
