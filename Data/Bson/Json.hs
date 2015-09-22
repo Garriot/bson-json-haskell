@@ -2,8 +2,6 @@
 
 {-# LANGUAGE TypeSynonymInstances, FlexibleInstances, OverloadedStrings #-}
 
-{-# LANGUAGE TypeSynonymInstances, FlexibleInstances, OverloadedStrings #-}
-
 module Data.Bson.Json where
 
 import qualified Data.Bson as B
